@@ -210,6 +210,25 @@
 
 
     //short-partners-carousel
+    if ($(".sitebnr-carousel .carousel-items figure").length > 1 || checkSm())
+      $('.sitebnr-carousel .carousel-items').flickity({
+        imagesLoaded: true,
+        autoPlay: 3000,
+        freeScroll: false,
+        pauseAutoPlayOnHover: true,
+        arrowShape: arrowStyle,
+        initialIndex: Math.round($(".short-partners-carousel .carousel-items figure").length / 2),
+        prevNextButtons: true,
+        draggable: false,
+        adaptiveHeight: true, 
+        wrapAround: false,
+        pageDots: false,
+        contain: true,
+        percentPosition: true,
+        cellAlign: 'center'
+      });
+
+    //short-partners-carousel
     if ($(".short-partners-carousel .carousel-items figure").length > 1 || checkSm())
       $('.short-partners-carousel .carousel-items').flickity({
         imagesLoaded: true,
