@@ -9037,7 +9037,7 @@ textarea.form-control {
   .flickity-btn-1 .flickity-prev-next-button:hover, .flickity-btn-1 .flickity-prev-next-button:focus {
     opacity: 1; }
   .flickity-btn-1 .flickity-prev-next-button .arrow {
-    fill: #333; }
+    fill: #fff; }
   .flickity-btn-1 .flickity-prev-next-button svg {
     position: absolute;
     left: 0;
