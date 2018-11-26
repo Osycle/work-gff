@@ -8133,6 +8133,75 @@ label {
   text-align: left;
   margin-top: 10px; }
 
+@-webkit-keyframes glare {
+  to {
+    background-position: 135px 0; }
+  35% {
+    background-position: 135px 0; }
+  from {
+    background-position: -135px 0; } }
+
+@keyframes glare {
+  to {
+    background-position: 135px 0; }
+  35% {
+    background-position: 135px 0; }
+  from {
+    background-position: -135px 0; } }
+
+@-webkit-keyframes glare-shadow {
+  to {
+    -webkit-filter: drop-shadow(16px 8px black);
+    filter: drop-shadow(16px 8px black); }
+  35% {
+    -webkit-filter: drop-shadow(16px 8px black);
+    filter: drop-shadow(16px 8px black); }
+  from {
+    -webkit-filter: drop-shadow(-16px -16px black);
+    filter: drop-shadow(-16px -16px black); } }
+
+@keyframes glare-shadow {
+  to {
+    -webkit-filter: drop-shadow(16px 8px black);
+    filter: drop-shadow(16px 8px black); }
+  35% {
+    -webkit-filter: drop-shadow(16px 8px black);
+    filter: drop-shadow(16px 8px black); }
+  from {
+    -webkit-filter: drop-shadow(-16px -16px black);
+    filter: drop-shadow(-16px -16px black); } }
+
+.logotype-animate {
+  position: relative;
+  overflow: hidden;
+  -webkit-filter: drop-shadow(0 0 black);
+  filter: drop-shadow(0 0 black); }
+  .logotype-animate .wrapper-gradient {
+    width: 100%;
+    background-position: 135px 0;
+    height: 100%;
+    position: absolute;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    -webkit-animation: glare 4s linear infinite;
+    animation: glare 4s linear infinite;
+    background-repeat: repeat;
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(30%, black), color-stop(50%, white), color-stop(70%, black));
+    background-image: -webkit-linear-gradient(left, black 30%, white 50%, black 70%);
+    background-image: -o-linear-gradient(left, black 30%, white 50%, black 70%);
+    background-image: linear-gradient(to right, black 30%, white 50%, black 70%);
+    -webkit-transform: rotate(45deg) scale(3);
+    -ms-transform: rotate(45deg) scale(3);
+    transform: rotate(45deg) scale(3); }
+    .logotype-animate .wrapper-gradient ~ img {
+      -webkit-filter: drop-shadow(8px -8px black);
+      filter: drop-shadow(8px -8px black);
+      -webkit-animation: glare-shadow 4s linear infinite;
+      animation: glare-shadow 4s linear infinite; }
+  .logotype-animate img {
+    position: relative; }
+
 .sitebnr .wrapper {
   background-color: black;
   border: 3px solid white; }

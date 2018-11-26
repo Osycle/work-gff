@@ -103,6 +103,59 @@ $header-min-menu: 70px;
     margin-top: 10px;
 	}
 }
+@keyframes glare{
+	to{
+		//transform: translateX(600px);
+		background-position: 135px 0;
+	}
+	35%{
+		background-position: 135px 0;
+	}
+	from{
+		background-position: -135px 0;
+	}
+}
+@keyframes glare-shadow{
+	to{
+		//transform: translateX(600px);
+		filter: drop-shadow(16px 8px black);
+	}
+	35%{
+		filter: drop-shadow(16px 8px black);
+	}
+	from{
+		filter: drop-shadow(-16px -16px black);
+	}
+}
+
+.logotype-animate{
+	position: relative;
+	overflow: hidden;
+	filter: drop-shadow(0 0 black);
+	.wrapper-gradient{
+		//$color-1: rgba(white, 0.5);
+		//$color-2: rgba(white, 0.5);
+		$color-1: black;
+		$color-2: white;
+		width: 100%;
+		background-position: 135px 0;
+		height: 100%;
+		position: absolute;
+		transition: 0.5s;
+		animation: glare 4s linear infinite;
+		background-repeat: repeat;
+		//background: linear-gradient(to top, $color-1 0%, $color-2 50%, $color-1 100%);
+		background-image: linear-gradient(to right, $color-1 30%,$color-2 50%, $color-1 70%);
+		transform: rotate(45deg) scale(3);
+		& ~ img{
+			filter: drop-shadow(8px -8px black);
+			animation: glare-shadow 4s linear infinite;
+		}
+	}
+	img{
+		position: relative;
+	}
+}
 .sitebnr{
 	.wrapper{
 		background-color: black;

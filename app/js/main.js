@@ -213,9 +213,9 @@
     if ($(".sitebnr-carousel .carousel-items figure").length > 1 || checkSm())
       $('.sitebnr-carousel .carousel-items').flickity({
         imagesLoaded: true,
-        autoPlay: 3000,
+        autoPlay: 2500,
         freeScroll: false,
-        pauseAutoPlayOnHover: true,
+        pauseAutoPlayOnHover: false,
         arrowShape: arrowStyle,
         initialIndex: Math.round($(".short-partners-carousel .carousel-items figure").length / 2),
         prevNextButtons: true,
