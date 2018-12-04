@@ -24,6 +24,47 @@ $path: "../fonts/";
 
 
 
+@font-face {
+    font-family: 'Algerian';
+    src: url($path+'Algerian.woff2') format('woff2'),
+        url($path+'Algerian.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Algemaria';
+    src: url($path+'AlgemariaNormal.woff2') format('woff2'),
+        url($path+'AlgemariaNormal.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Algeria';
+    src: url($path+'Algeria.woff2') format('woff2'),
+        url($path+'Algeria.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Algerian';
+    src: url($path+'Algerian.woff2') format('woff2'),
+        url($path+'Algerian.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AlgerianD';
+    src: url($path+'AlgerianD.woff2') format('woff2'),
+        url($path+'AlgerianD.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 
 
 

@@ -13,7 +13,7 @@ $color-special-1: #2e1c11;
 
 $font-family-1: "Myriad Pro";
 $font-family-2: "Verdana";
-$font-family-3: "Swiss721 BT";
+$font-family-3: "Algerian";
 
 $color-scroll: $color-1;
 $color-footer: #0071BC;
@@ -635,6 +635,8 @@ table {
 	box-shadow: inset 0 0 0px black, 0px 0px 0px 0px darken(white, 12%), 0px 0px 0px 0px $color-2;
 	&:hover{
 		border-color: $color-1;
+		color: black;
+		background-color: white;
 	}
 	&.reverse{
 		border-color: black;
@@ -684,7 +686,6 @@ table {
 			background-color: transparent;
 			transition: all 0.3s ease;
 			a{
-				color: black;
 				display: block;
 				background-color: transparent;
 				padding: 5px 7px;
@@ -962,7 +963,7 @@ main{
 	//overflow: hidden;
 	position: relative;
 	overflow: hidden;
-	//min-height: 300px;
+	min-height: 50vh;
 	z-index: 1;
 	color: white;
 	@extend .list-style-1;

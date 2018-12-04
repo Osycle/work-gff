@@ -385,3 +385,126 @@
 
 
 
+//services
+.icon-img{
+	background-position: center;
+	background-size: auto;
+	background-repeat: no-repeat;
+	display: inline-block;
+}
+.icon-service-1{ background-image: url('../img/other/service-1.png');}
+.icon-service-2{ background-image: url('../img/other/service-2.png');}
+.icon-service-3{ background-image: url('../img/other/service-3.png');}
+.icon-service-4{ background-image: url('../img/other/service-4.png');}
+.icon-service-5{ background-image: url('../img/other/service-5.png');}
+.icon-service-6{ background-image: url('../img/other/service-6.png');}
+.icon-service-7{ background-image: url('../img/other/service-7.png');}
+.icon-service-8{ background-image: url('../img/other/service-8.png');}
+.icon-service-9{ background-image: url('../img/other/service-9.png');}
+.icon-service-10{ background-image: url('../img/other/service-10.png');}
+.icon-service-11{ background-image: url('../img/other/service-11.png');}
+.icon-service-12{ background-image: url('../img/other/service-12.png');}
+.services-items{
+	figure{
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+	.icon-img{
+		width: 100%;
+		height: 120px;
+	}	
+	.desc-content{
+		min-height: 50px;
+	}
+}
+
+//news
+.news{
+	.short-news-items{
+		figure{
+			.img{
+				height: 600px;
+			}
+		}
+	}
+}
+//staff
+.staff-items{
+	figure{
+		.img{
+			height: 300px;
+			background-size: cover;
+		}
+		filter: brightness(100%);
+		transition: 0.4s;
+		&:hover{
+			filter: brightness(130%);	
+		} 
+	}
+}
+
+//staff-article
+.staff-article{
+	.article-img{
+		img{
+			width: 100%;
+		}
+	}
+}
+//about
+.about{
+	.text-content{
+		img{
+			margin-top: 5px;
+		}
+	}
+}
+
+//welcome
+.welcome{
+	.wrapper{
+		height: 100vh;
+		width: 100vw;
+		background-position: center;
+		background-size: cover;
+	}
+
+	.align-i-center{
+		height: 100vh;
+		justify-content: center;
+	}
+}
+.welcome-lang{
+	width: 250px;
+}
+.welcome-lang-list{
+	display: flex;
+	background-color: rgba(black, 0.5);
+	padding: 4px 15px;
+	margin-top: 7px;
+	margin-bottom: 7px;
+	justify-content: space-between;
+	.active{
+		text-decoration: underline;
+	}
+	li{
+		display: inline-block;
+		&:hover{
+			color: $color-1;
+		}
+	}
+	a{
+		display: block;
+		font-size: 32px;
+		font-weight: 600;
+	}
+}
+.welcome-slogan{
+	padding: 10px 15px;
+	font-family: $font-family-3;
+	font-size: 22px;
+	background-color: rgba(black, 0.5);
+	p:nth-child(1){
+		font-size: 32px;
+	}
+}
