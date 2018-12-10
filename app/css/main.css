@@ -8487,7 +8487,7 @@ ul[class*="sub"] {
   color: white;
   -webkit-box-shadow: 0 0 20px 0 black;
   box-shadow: 0 0 20px 0 black;
-  background-color: white; }
+  background-color: #000; }
   .min-menu-header .min-menu-logo {
     padding: 12px 0;
     width: 100%; }
@@ -8504,6 +8504,16 @@ ul[class*="sub"] {
       -webkit-transform: scale(0.8);
       -ms-transform: scale(0.8);
       transform: scale(0.8); }
+
+.min-header-phone {
+  text-align: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  height: 70px; }
 
 .mm-opening .min-menu-header {
   opacity: 0;
@@ -8584,7 +8594,7 @@ ul[class*="sub"] {
 
 .icon-bar {
   width: 100%;
-  background-color: #deb65f;
+  background-color: white;
   height: 1px;
   position: relative;
   display: block;
@@ -9011,8 +9021,8 @@ textarea.form-control {
 
 .icon-img {
   background-position: center;
-  -webkit-background-size: auto auto;
-  background-size: auto;
+  -webkit-background-size: contain;
+  background-size: contain;
   background-repeat: no-repeat;
   display: inline-block; }
 
@@ -9124,7 +9134,7 @@ textarea.form-control {
       color: #7b371a; }
   .welcome-lang-list a {
     display: block;
-    font-size: 32px;
+    font-size: 20px;
     font-weight: 600; }
 
 .welcome-slogan {
@@ -9134,6 +9144,35 @@ textarea.form-control {
   background-color: rgba(0, 0, 0, 0.5); }
   .welcome-slogan p:nth-child(1) {
     font-size: 32px; }
+
+.about-tab-nav {
+  margin-top: 15px;
+  margin-bottom: 15px; }
+  .about-tab-nav .list-inline {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end; }
+    @media (max-width: 991px) {
+      .about-tab-nav .list-inline {
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center; } }
+  .about-tab-nav li {
+    margin-left: 15px;
+    vertical-align: bottom;
+    margin-right: 15px; }
+    .about-tab-nav li img {
+      width: 40px; }
 
 /* 
 		_footer.scss

@@ -444,7 +444,7 @@ ul[class*="sub"]{
 	z-index: 100;
 	color: white;
 	box-shadow: 0 0 20px 0 black;
-	background-color: white;
+	background-color: #000;
 	.min-menu-logo{
 		padding: 12px 0;
 		width: 100%;
@@ -464,6 +464,13 @@ ul[class*="sub"]{
 		}
 	}
 
+}
+.min-header-phone{
+	text-align: center;
+	justify-content: center;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	height: $header-min-menu;
 }
 .mm-navbars-top{
 	//background-color: #333;
@@ -575,7 +582,7 @@ ul[class*="sub"]{
 }
 .icon-bar{
 	width: 100%;
-	background-color: $color-2;
+	background-color: white;
 	height: 1px;
 	position: relative;
 	display: block;
