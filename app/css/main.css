@@ -9096,6 +9096,17 @@ textarea.form-control {
 .about .text-content img {
   margin-top: 5px; }
 
+.about .block-img .img {
+  background-position: bottom;
+  -webkit-background-size: cover;
+  background-size: cover;
+  height: 500px; }
+  @media (max-width: 991px) {
+    .about .block-img .img {
+      height: 210px;
+      -webkit-background-size: contain;
+      background-size: contain; } }
+
 .welcome .wrapper {
   height: 100vh;
   width: 100vw;

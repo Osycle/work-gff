@@ -458,6 +458,17 @@
 			margin-top: 5px;
 		}
 	}
+	.block-img{
+		.img{
+			background-position: bottom;
+			background-size: cover;
+			height: 500px;
+			@media (max-width: 991px) {
+				height: 210px;
+				background-size: contain;
+			}
+		}
+	}
 }
 
 //welcome
