@@ -458,17 +458,16 @@
 			margin-top: 5px;
 		}
 	}
-	// .block-img{
-	// 	.img{
-	// 		background-position: bottom;
-	// 		background-size: cover;
-	// 		height: 500px;
-	// 		@media (max-width: 991px) {
-	// 			height: 210px;
-	// 			background-size: contain;
-	// 		}
-	// 	}
-	// }
+	.block-img{
+		.img{
+			background-size: cover;
+			height: 100%;
+			@media (max-width: 991px) {
+				height: 210px;
+				background-size: contain;
+			}
+		}
+	}
 }
 
 //welcome
@@ -513,7 +512,7 @@
 	padding: 10px 15px;
 	font-family: $font-family-3;
 	font-size: 22px;
-	background-color: rgba(black, 0.5);
+	//background-color: rgba(black, 0.5);
 	p:nth-child(1){
 		font-size: 32px;
 	}

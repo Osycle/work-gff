@@ -9096,6 +9096,16 @@ textarea.form-control {
 .about .text-content img {
   margin-top: 5px; }
 
+.about .block-img .img {
+  -webkit-background-size: cover;
+  background-size: cover;
+  height: 100%; }
+  @media (max-width: 991px) {
+    .about .block-img .img {
+      height: 210px;
+      -webkit-background-size: contain;
+      background-size: contain; } }
+
 .welcome .wrapper {
   height: 100vh;
   width: 100vw;
@@ -9139,8 +9149,7 @@ textarea.form-control {
 .welcome-slogan {
   padding: 10px 15px;
   font-family: "Algerian";
-  font-size: 22px;
-  background-color: rgba(0, 0, 0, 0.5); }
+  font-size: 22px; }
   .welcome-slogan p:nth-child(1) {
     font-size: 32px; }
 
@@ -10831,60 +10840,6 @@ html .p-0 {
   .box-md-10 {
     width: 100%; } }
 
-@media (min-width: 1200px) {
-  .box-lg-0 {
-    -webkit-flex-basis: 0%;
-    -ms-flex-preferred-size: 0%;
-    flex-basis: 0%; }
-  .box-lg-1 {
-    -webkit-flex-basis: 8.33333%;
-    -ms-flex-preferred-size: 8.33333%;
-    flex-basis: 8.33333%; }
-  .box-lg-2 {
-    -webkit-flex-basis: 16.66667%;
-    -ms-flex-preferred-size: 16.66667%;
-    flex-basis: 16.66667%; }
-  .box-lg-3 {
-    -webkit-flex-basis: 25%;
-    -ms-flex-preferred-size: 25%;
-    flex-basis: 25%; }
-  .box-lg-4 {
-    -webkit-flex-basis: 33.33333%;
-    -ms-flex-preferred-size: 33.33333%;
-    flex-basis: 33.33333%; }
-  .box-lg-5 {
-    -webkit-flex-basis: 41.66667%;
-    -ms-flex-preferred-size: 41.66667%;
-    flex-basis: 41.66667%; }
-  .box-lg-6 {
-    -webkit-flex-basis: 50%;
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%; }
-  .box-lg-7 {
-    -webkit-flex-basis: 58.33333%;
-    -ms-flex-preferred-size: 58.33333%;
-    flex-basis: 58.33333%; }
-  .box-lg-8 {
-    -webkit-flex-basis: 66.66667%;
-    -ms-flex-preferred-size: 66.66667%;
-    flex-basis: 66.66667%; }
-  .box-lg-9 {
-    -webkit-flex-basis: 75%;
-    -ms-flex-preferred-size: 75%;
-    flex-basis: 75%; }
-  .box-lg-10 {
-    -webkit-flex-basis: 83.33333%;
-    -ms-flex-preferred-size: 83.33333%;
-    flex-basis: 83.33333%; }
-  .box-lg-11 {
-    -webkit-flex-basis: 91.66667%;
-    -ms-flex-preferred-size: 91.66667%;
-    flex-basis: 91.66667%; }
-  .box-lg-12 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%; } }
-
 .flex-content {
   display: -webkit-box;
   display: -webkit-flex;
@@ -10927,20 +10882,13 @@ html .p-0 {
   -ms-flex-align: end;
   align-items: flex-end; }
 
-.flex-def {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex; }
-  .flex-def > div, .flex-def > figure:not([class*="box-"]):not([class*="col-"]) {
-    width: 100%; }
-  @media (max-width: 991px) {
-    .flex-def {
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-      flex-direction: column; } }
+@media (max-width: 991px) {
+  .flex-sm-column {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column; } }
 
 .justify-c-center {
   -webkit-box-pack: center;
